@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81E02EF7C549A43AEA4EA1A9 /* Pods_Test_Pago.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B08899C9F4893A5574E2D6 /* Pods_Test_Pago.framework */; };
+		90C2007E9D6A81DC6A3E2190 /* Pods_Test_Pago_Test_PagoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA53F4E053E055E8D1712E5 /* Pods_Test_Pago_Test_PagoUITests.framework */; };
 		9F707F812894234B00DB8381 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F707F802894234B00DB8381 /* AppDelegate.swift */; };
 		9F707F832894234B00DB8381 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F707F822894234B00DB8381 /* SceneDelegate.swift */; };
 		9F707F852894234B00DB8381 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F707F842894234B00DB8381 /* ViewController.swift */; };
@@ -17,6 +19,7 @@
 		9F707F9B2894234C00DB8381 /* Test_PagoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F707F9A2894234C00DB8381 /* Test_PagoTests.swift */; };
 		9F707FA52894234C00DB8381 /* Test_PagoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F707FA42894234C00DB8381 /* Test_PagoUITests.swift */; };
 		9F707FA72894234C00DB8381 /* Test_PagoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F707FA62894234C00DB8381 /* Test_PagoUITestsLaunchTests.swift */; };
+		B99E7FC257A6D94A355DAB57 /* Pods_Test_PagoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA5EC987BF3D4FCAC5E610E /* Pods_Test_PagoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D1633B100DF51B2E2D055B3 /* Pods-Test_PagoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_PagoTests.debug.xcconfig"; path = "Target Support Files/Pods-Test_PagoTests/Pods-Test_PagoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		67B08899C9F4893A5574E2D6 /* Pods_Test_Pago.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_Pago.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71B0E074D02DDF279472BC2D /* Pods-Test_PagoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_PagoTests.release.xcconfig"; path = "Target Support Files/Pods-Test_PagoTests/Pods-Test_PagoTests.release.xcconfig"; sourceTree = "<group>"; };
+		862A73D22CE74899AF874490 /* Pods-Test_Pago.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_Pago.release.xcconfig"; path = "Target Support Files/Pods-Test_Pago/Pods-Test_Pago.release.xcconfig"; sourceTree = "<group>"; };
+		91327A53B5CF5E68CD505A3D /* Pods-Test_Pago-Test_PagoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_Pago-Test_PagoUITests.release.xcconfig"; path = "Target Support Files/Pods-Test_Pago-Test_PagoUITests/Pods-Test_Pago-Test_PagoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		94AB0BC53BCC51DC64430D62 /* Pods-Test_Pago.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_Pago.debug.xcconfig"; path = "Target Support Files/Pods-Test_Pago/Pods-Test_Pago.debug.xcconfig"; sourceTree = "<group>"; };
 		9F707F7D2894234B00DB8381 /* Test_Pago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test_Pago.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F707F802894234B00DB8381 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F707F822894234B00DB8381 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +60,9 @@
 		9F707FA02894234C00DB8381 /* Test_PagoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test_PagoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F707FA42894234C00DB8381 /* Test_PagoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_PagoUITests.swift; sourceTree = "<group>"; };
 		9F707FA62894234C00DB8381 /* Test_PagoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_PagoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AFA5EC987BF3D4FCAC5E610E /* Pods_Test_PagoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_PagoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B72A2DE758BA36BE34EEDEAD /* Pods-Test_Pago-Test_PagoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_Pago-Test_PagoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Test_Pago-Test_PagoUITests/Pods-Test_Pago-Test_PagoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BDA53F4E053E055E8D1712E5 /* Pods_Test_Pago_Test_PagoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_Pago_Test_PagoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E02EF7C549A43AEA4EA1A9 /* Pods_Test_Pago.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B99E7FC257A6D94A355DAB57 /* Pods_Test_PagoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90C2007E9D6A81DC6A3E2190 /* Pods_Test_Pago_Test_PagoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,8 @@
 				9F707F992894234C00DB8381 /* Test_PagoTests */,
 				9F707FA32894234C00DB8381 /* Test_PagoUITests */,
 				9F707F7E2894234B00DB8381 /* Products */,
+				D755DBB0A6FAA0E2EAEC905B /* Pods */,
+				F3B8D87EFE3F685A2881DF66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +147,29 @@
 			path = Test_PagoUITests;
 			sourceTree = "<group>";
 		};
+		D755DBB0A6FAA0E2EAEC905B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94AB0BC53BCC51DC64430D62 /* Pods-Test_Pago.debug.xcconfig */,
+				862A73D22CE74899AF874490 /* Pods-Test_Pago.release.xcconfig */,
+				B72A2DE758BA36BE34EEDEAD /* Pods-Test_Pago-Test_PagoUITests.debug.xcconfig */,
+				91327A53B5CF5E68CD505A3D /* Pods-Test_Pago-Test_PagoUITests.release.xcconfig */,
+				1D1633B100DF51B2E2D055B3 /* Pods-Test_PagoTests.debug.xcconfig */,
+				71B0E074D02DDF279472BC2D /* Pods-Test_PagoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F3B8D87EFE3F685A2881DF66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67B08899C9F4893A5574E2D6 /* Pods_Test_Pago.framework */,
+				BDA53F4E053E055E8D1712E5 /* Pods_Test_Pago_Test_PagoUITests.framework */,
+				AFA5EC987BF3D4FCAC5E610E /* Pods_Test_PagoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F707FAA2894234C00DB8381 /* Build configuration list for PBXNativeTarget "Test_Pago" */;
 			buildPhases = (
+				154D09C6799F3DFDCBE72050 /* [CP] Check Pods Manifest.lock */,
 				9F707F792894234B00DB8381 /* Sources */,
 				9F707F7A2894234B00DB8381 /* Frameworks */,
 				9F707F7B2894234B00DB8381 /* Resources */,
+				00DA710BBA3EEBA2A472B177 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +196,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F707FAD2894234C00DB8381 /* Build configuration list for PBXNativeTarget "Test_PagoTests" */;
 			buildPhases = (
+				2528CB6220CC5C06FCF319B2 /* [CP] Check Pods Manifest.lock */,
 				9F707F922894234C00DB8381 /* Sources */,
 				9F707F932894234C00DB8381 /* Frameworks */,
 				9F707F942894234C00DB8381 /* Resources */,
@@ -172,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F707FB02894234C00DB8381 /* Build configuration list for PBXNativeTarget "Test_PagoUITests" */;
 			buildPhases = (
+				3500963DE1309C4ECDFD2237 /* [CP] Check Pods Manifest.lock */,
 				9F707F9C2894234C00DB8381 /* Sources */,
 				9F707F9D2894234C00DB8381 /* Frameworks */,
 				9F707F9E2894234C00DB8381 /* Resources */,
+				5734DC364F0F66E958333302 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,6 +300,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DA710BBA3EEBA2A472B177 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Test_Pago/Pods-Test_Pago-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Test_Pago/Pods-Test_Pago-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Test_Pago/Pods-Test_Pago-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		154D09C6799F3DFDCBE72050 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Test_Pago-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2528CB6220CC5C06FCF319B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Test_PagoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3500963DE1309C4ECDFD2237 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Test_Pago-Test_PagoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5734DC364F0F66E958333302 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Test_Pago-Test_PagoUITests/Pods-Test_Pago-Test_PagoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Test_Pago-Test_PagoUITests/Pods-Test_Pago-Test_PagoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Test_Pago-Test_PagoUITests/Pods-Test_Pago-Test_PagoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9F707F792894234B00DB8381 /* Sources */ = {
@@ -436,6 +584,7 @@
 		};
 		9F707FAB2894234C00DB8381 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94AB0BC53BCC51DC64430D62 /* Pods-Test_Pago.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -448,6 +597,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -463,6 +613,7 @@
 		};
 		9F707FAC2894234C00DB8381 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 862A73D22CE74899AF874490 /* Pods-Test_Pago.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -475,6 +626,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -490,6 +642,7 @@
 		};
 		9F707FAE2894234C00DB8381 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D1633B100DF51B2E2D055B3 /* Pods-Test_PagoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -509,6 +662,7 @@
 		};
 		9F707FAF2894234C00DB8381 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71B0E074D02DDF279472BC2D /* Pods-Test_PagoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +682,7 @@
 		};
 		9F707FB12894234C00DB8381 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B72A2DE758BA36BE34EEDEAD /* Pods-Test_Pago-Test_PagoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -545,6 +700,7 @@
 		};
 		9F707FB22894234C00DB8381 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91327A53B5CF5E68CD505A3D /* Pods-Test_Pago-Test_PagoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

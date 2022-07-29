@@ -1,0 +1,6 @@
+framework module Pods_Test_Pago {
+  umbrella header "Pods-Test_Pago-umbrella.h"
+
+  export *
+  module * { export * }
+}

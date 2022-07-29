@@ -1,0 +1,26 @@
+# Podfile
+
+platform :ios, '15.4'
+use_frameworks!
+
+target 'Test_Pago' do
+
+# Pods for Test_Pago
+
+pod 'SnapKit', '~> 5.6.0'
+pod 'Alamofire'
+pod 'RxSwift', '6.5.0'
+pod 'RxCocoa', '6.5.0'
+
+    target 'Test_PagoTests' do
+    inherit! :search_paths
+
+    # Pods for testing
+    end
+
+    target 'Test_PagoUITests' do
+
+    # Pods for testing
+    end
+
+end
