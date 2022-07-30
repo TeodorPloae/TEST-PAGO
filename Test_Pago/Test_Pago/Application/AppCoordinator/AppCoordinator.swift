@@ -10,20 +10,15 @@ import RxSwift
 
 class AppCoordinator: BaseCoordinator<Void> {
     
-    var window: UIWindow
+    var rootNavigationController: UINavigationController
     
-    init(window: UIWindow) {
-        self.window = window
+    init(rootNavigationController: UINavigationController) {
+        self.rootNavigationController = rootNavigationController
     }
     
     override func start() -> Observable<CoordinateResultType<Void>> {
         
-        let navigationController = UINavigationController(rootViewController: ContactsViewController())
-        
-        let contactsCoordinator = ContactsCoordinator(rootNavigationController: navigationController)
-        
-        window.rootViewController = navigationController
-        window.makeKeyAndVisible()
+        let contactsCoordinator = ContactsCoordinator(rootNavigationController: rootNavigationController)
         
         coordinate(to: contactsCoordinator)
             .subscribe(onNext: { [weak self] coordinationResult in
@@ -38,7 +33,7 @@ class AppCoordinator: BaseCoordinator<Void> {
     }
     
     private func goToContactDetails() {
-        
+        print("goToContactDetails")
     }
 }
 

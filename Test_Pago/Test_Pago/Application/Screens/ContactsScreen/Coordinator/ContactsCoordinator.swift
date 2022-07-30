@@ -24,7 +24,7 @@ class ContactsCoordinator: BaseCoordinator<ContactsCoordinatorResult> {
         
         let viewModel = ContactsViewModel()
         
-        let viewController = ContactsViewController()
+        let viewController = ContactsViewController(viewModel: viewModel)
         
         rootNavigationController.pushViewController(viewController, animated: true)
         

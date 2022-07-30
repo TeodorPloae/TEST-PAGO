@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "8C4BB0EB-6D82-49C9-9B78-6BB6653D4CF0"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F0E1906D-6726-4CD9-A4AF-D8D6F66084F4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Test_Pago/Application/Utils/ViewController/BaseViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "setupUI()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A022F650-E17A-4E8C-82E0-5A20C92C39ED"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Test_Pago/Application/Screens/ContactsScreen/Coordinator/ContactsCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "start()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0F14C080-8967-4925-8ADC-B0128F1A14C3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Test_Pago/Application/Screens/ContactsScreen/ViewController/ContactsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "ContactsViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "0F14C080-8967-4925-8ADC-B0128F1A14C3 - f96316aa24819454"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Test_Pago.ContactsViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Test_Pago.ContactsViewController"
+                  moduleName = "Test_Pago"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/teodor.ploae/Desktop/TEST-PAGO/Test_Pago/Test_Pago/Application/Screens/ContactsScreen/ViewController/ContactsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "31">
+               </Location>
+               <Location
+                  uuid = "0F14C080-8967-4925-8ADC-B0128F1A14C3 - 101b417841cd70ae"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Test_Pago.ContactsViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Test_Pago.ContactsViewController"
+                  moduleName = "Test_Pago"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/teodor.ploae/Desktop/TEST-PAGO/Test_Pago/Test_Pago/Application/Screens/ContactsScreen/ViewController/ContactsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "304">
+               </Location>
+               <Location
+                  uuid = "0F14C080-8967-4925-8ADC-B0128F1A14C3 - 62a87470a2caeda5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Test_Pago.ContactsViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Test_Pago.ContactsViewController&gt;"
+                  moduleName = "Test_Pago"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/teodor.ploae/Desktop/TEST-PAGO/Test_Pago/Test_Pago/Application/Screens/ContactsScreen/ViewController/ContactsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "23">
+               </Location>
+               <Location
+                  uuid = "0F14C080-8967-4925-8ADC-B0128F1A14C3 - b84caf57957e09c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Test_Pago.ContactsViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Test_Pago.ContactsViewController&gt;"
+                  moduleName = "Test_Pago"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/teodor.ploae/Desktop/TEST-PAGO/Test_Pago/Test_Pago/Application/Screens/ContactsScreen/ViewController/ContactsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  uuid = "0F14C080-8967-4925-8ADC-B0128F1A14C3 - 4702c6475e8efe1c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Test_Pago.ContactsViewController.__deallocating_deinit"
+                  moduleName = "Test_Pago"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/teodor.ploae/Desktop/TEST-PAGO/Test_Pago/Test_Pago/Application/Screens/ContactsScreen/ViewController/ContactsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "67FB6313-5138-4F2F-9778-5BDE26312A8A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Test_Pago/Application/Screens/ContactsScreen/Coordinator/ContactsCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "start()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "47B241E8-23E2-4938-A05C-AC8490A1362D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Test_Pago/Application/SceneDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "scene(_:willConnectTo:options:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
