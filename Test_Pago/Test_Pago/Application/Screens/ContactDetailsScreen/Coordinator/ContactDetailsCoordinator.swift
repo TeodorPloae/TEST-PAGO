@@ -31,8 +31,11 @@ class ContactDetailsCoordinator: BaseCoordinator<ContactDetailsCoordinatorResult
         let dismissObserver = viewModel.didTapSaveButtonPublisher
             .map({ CoordinateResultType.executeAndReleaseTheCoordinator(
                 CoordinationResult.dismiss) })
+        let backActionObserver = viewModel.backActionPublisher
+            .map({ CoordinateResultType.executeAndReleaseTheCoordinator(
+                CoordinationResult.dismiss) })
         
-        return Observable.merge(dismissObserver)
+        return Observable.merge(dismissObserver, backActionObserver)
             .take(1)
     }
 }

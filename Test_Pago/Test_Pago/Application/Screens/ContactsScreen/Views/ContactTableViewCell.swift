@@ -40,6 +40,12 @@ class ContactTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func setLayout(for contact: Contact) {
+        let firstName = contact.firstName ?? ""
+        let lastName = contact.lastName ?? ""
+        nameLabel.text = "\(firstName) \(lastName)"
+    }
 
 }
 
@@ -60,7 +66,6 @@ extension ContactTableViewCell {
     private func makeNameLabel() -> UILabel {
         let nameLabel = UILabel()
         nameLabel.font = .systemFont(ofSize: 17, weight: .regular)
-        nameLabel.text = "Name Placeholder"
         return nameLabel
     }
     

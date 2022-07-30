@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		81E02EF7C549A43AEA4EA1A9 /* Pods_Test_Pago.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B08899C9F4893A5574E2D6 /* Pods_Test_Pago.framework */; };
 		90C2007E9D6A81DC6A3E2190 /* Pods_Test_Pago_Test_PagoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA53F4E053E055E8D1712E5 /* Pods_Test_Pago_Test_PagoUITests.framework */; };
+		9F30D96C2895C3F200151F09 /* CoreDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F30D96B2895C3F200151F09 /* CoreDataLoader.swift */; };
 		9F4BAD532894307100E9FB4F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4BAD522894307100E9FB4F /* AppCoordinator.swift */; };
 		9F4BAD55289430B700E9FB4F /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4BAD54289430B700E9FB4F /* BaseCoordinator.swift */; };
 		9F4BAD5E2894342B00E9FB4F /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4BAD5D2894342B00E9FB4F /* ContactsViewModel.swift */; };
@@ -21,6 +22,15 @@
 		9F4BAD8B28956BB300E9FB4F /* LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4BAD8A28956BB300E9FB4F /* LocalizedString.swift */; };
 		9F4BAD8E28957C6D00E9FB4F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4BAD8D28957C6D00E9FB4F /* Colors.swift */; };
 		9F4BAD912895806C00E9FB4F /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4BAD902895806C00E9FB4F /* ContactTableViewCell.swift */; };
+		9F4BAD95289592C700E9FB4F /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F4BAD93289592C700E9FB4F /* DataModel.xcdatamodeld */; };
+		9F4BAD9B289599F800E9FB4F /* LaunchScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4BAD9A289599F800E9FB4F /* LaunchScreenViewModel.swift */; };
+		9F4BAD9D28959A0700E9FB4F /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4BAD9C28959A0700E9FB4F /* LaunchScreenViewController.swift */; };
+		9F4BAD9F28959A1200E9FB4F /* LaunchScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4BAD9E28959A1200E9FB4F /* LaunchScreenCoordinator.swift */; };
+		9F4BADA528959C8B00E9FB4F /* ContactsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4BADA428959C8B00E9FB4F /* ContactsRepository.swift */; };
+		9F4BADA728959D3800E9FB4F /* ContactNetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4BADA628959D3800E9FB4F /* ContactNetworkModel.swift */; };
+		9F4BADAE2895A2AB00E9FB4F /* Contact+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4BADAC2895A2AB00E9FB4F /* Contact+CoreDataClass.swift */; };
+		9F4BADAF2895A2AB00E9FB4F /* Contact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4BADAD2895A2AB00E9FB4F /* Contact+CoreDataProperties.swift */; };
+		9F4BADB12895A52A00E9FB4F /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4BADB02895A52A00E9FB4F /* CoreDataStack.swift */; };
 		9F707F812894234B00DB8381 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F707F802894234B00DB8381 /* AppDelegate.swift */; };
 		9F707F832894234B00DB8381 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F707F822894234B00DB8381 /* SceneDelegate.swift */; };
 		9F707F8B2894234B00DB8381 /* Test_Pago.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F707F892894234B00DB8381 /* Test_Pago.xcdatamodeld */; };
@@ -55,6 +65,7 @@
 		862A73D22CE74899AF874490 /* Pods-Test_Pago.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_Pago.release.xcconfig"; path = "Target Support Files/Pods-Test_Pago/Pods-Test_Pago.release.xcconfig"; sourceTree = "<group>"; };
 		91327A53B5CF5E68CD505A3D /* Pods-Test_Pago-Test_PagoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_Pago-Test_PagoUITests.release.xcconfig"; path = "Target Support Files/Pods-Test_Pago-Test_PagoUITests/Pods-Test_Pago-Test_PagoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		94AB0BC53BCC51DC64430D62 /* Pods-Test_Pago.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_Pago.debug.xcconfig"; path = "Target Support Files/Pods-Test_Pago/Pods-Test_Pago.debug.xcconfig"; sourceTree = "<group>"; };
+		9F30D96B2895C3F200151F09 /* CoreDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataLoader.swift; sourceTree = "<group>"; };
 		9F4BAD522894307100E9FB4F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		9F4BAD54289430B700E9FB4F /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		9F4BAD5D2894342B00E9FB4F /* ContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
@@ -67,6 +78,15 @@
 		9F4BAD8A28956BB300E9FB4F /* LocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedString.swift; sourceTree = "<group>"; };
 		9F4BAD8D28957C6D00E9FB4F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		9F4BAD902895806C00E9FB4F /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		9F4BAD94289592C700E9FB4F /* Contact.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Contact.xcdatamodel; sourceTree = "<group>"; };
+		9F4BAD9A289599F800E9FB4F /* LaunchScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewModel.swift; sourceTree = "<group>"; };
+		9F4BAD9C28959A0700E9FB4F /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		9F4BAD9E28959A1200E9FB4F /* LaunchScreenCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenCoordinator.swift; sourceTree = "<group>"; };
+		9F4BADA428959C8B00E9FB4F /* ContactsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsRepository.swift; sourceTree = "<group>"; };
+		9F4BADA628959D3800E9FB4F /* ContactNetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactNetworkModel.swift; sourceTree = "<group>"; };
+		9F4BADAC2895A2AB00E9FB4F /* Contact+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Contact+CoreDataClass.swift"; path = "Test_Pago/Application/Contact+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		9F4BADAD2895A2AB00E9FB4F /* Contact+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Contact+CoreDataProperties.swift"; path = "Test_Pago/Application/Contact+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		9F4BADB02895A52A00E9FB4F /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		9F707F7D2894234B00DB8381 /* Test_Pago.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test_Pago.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F707F802894234B00DB8381 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F707F822894234B00DB8381 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +153,8 @@
 			children = (
 				9F4BAD7B2895629A00E9FB4F /* AppDelegates */,
 				9F4BAD502894305D00E9FB4F /* Utils */,
+				9F4BAD92289590AF00E9FB4F /* CoreData */,
+				9F4BADA128959C5200E9FB4F /* Networking */,
 				9F4BAD7A2895628100E9FB4F /* AppCoordinator */,
 				9F4BAD57289433BE00E9FB4F /* Screens */,
 				9F4BAD8528956AB400E9FB4F /* Resources */,
@@ -143,6 +165,7 @@
 		9F4BAD57289433BE00E9FB4F /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				9F4BAD96289599B200E9FB4F /* LaunchScreen */,
 				9F4BAD58289433D700E9FB4F /* ContactsScreen */,
 				9F4BAD59289433E600E9FB4F /* ContactDetailsScreen */,
 			);
@@ -275,6 +298,77 @@
 				9F4BAD902895806C00E9FB4F /* ContactTableViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9F4BAD92289590AF00E9FB4F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9F4BADAC2895A2AB00E9FB4F /* Contact+CoreDataClass.swift */,
+				9F4BADAD2895A2AB00E9FB4F /* Contact+CoreDataProperties.swift */,
+				9F4BAD93289592C700E9FB4F /* DataModel.xcdatamodeld */,
+				9F4BADB02895A52A00E9FB4F /* CoreDataStack.swift */,
+				9F30D96B2895C3F200151F09 /* CoreDataLoader.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		9F4BAD96289599B200E9FB4F /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9F4BAD99289599CB00E9FB4F /* Coordinator */,
+				9F4BAD98289599C500E9FB4F /* ViewController */,
+				9F4BAD97289599C000E9FB4F /* ViewModel */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		9F4BAD97289599C000E9FB4F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9F4BAD9A289599F800E9FB4F /* LaunchScreenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9F4BAD98289599C500E9FB4F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9F4BAD9C28959A0700E9FB4F /* LaunchScreenViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9F4BAD99289599CB00E9FB4F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				9F4BAD9E28959A1200E9FB4F /* LaunchScreenCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		9F4BADA128959C5200E9FB4F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9F4BADA328959C7600E9FB4F /* Models */,
+				9F4BADA228959C6F00E9FB4F /* Repository */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		9F4BADA228959C6F00E9FB4F /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				9F4BADA428959C8B00E9FB4F /* ContactsRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		9F4BADA328959C7600E9FB4F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9F4BADA628959D3800E9FB4F /* ContactNetworkModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		9F707F742894234B00DB8381 = {
@@ -588,17 +682,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F4BAD822895637800E9FB4F /* ContactDetailsViewController.swift in Sources */,
+				9F4BADB12895A52A00E9FB4F /* CoreDataStack.swift in Sources */,
+				9F4BADAE2895A2AB00E9FB4F /* Contact+CoreDataClass.swift in Sources */,
 				9F707F8B2894234B00DB8381 /* Test_Pago.xcdatamodeld in Sources */,
 				9F4BAD8B28956BB300E9FB4F /* LocalizedString.swift in Sources */,
 				9F4BAD55289430B700E9FB4F /* BaseCoordinator.swift in Sources */,
+				9F4BAD9D28959A0700E9FB4F /* LaunchScreenViewController.swift in Sources */,
+				9F4BADAF2895A2AB00E9FB4F /* Contact+CoreDataProperties.swift in Sources */,
 				9F4BAD912895806C00E9FB4F /* ContactTableViewCell.swift in Sources */,
 				9F4BAD5E2894342B00E9FB4F /* ContactsViewModel.swift in Sources */,
+				9F4BADA528959C8B00E9FB4F /* ContactsRepository.swift in Sources */,
 				9F4BAD842895638100E9FB4F /* ContactDetailsViewModel.swift in Sources */,
 				9F4BAD632894345800E9FB4F /* ContactsCoordinator.swift in Sources */,
+				9F4BAD9F28959A1200E9FB4F /* LaunchScreenCoordinator.swift in Sources */,
 				9F4BAD532894307100E9FB4F /* AppCoordinator.swift in Sources */,
+				9F4BADA728959D3800E9FB4F /* ContactNetworkModel.swift in Sources */,
 				9F4BAD8E28957C6D00E9FB4F /* Colors.swift in Sources */,
 				9F4BAD802895636800E9FB4F /* ContactDetailsCoordinator.swift in Sources */,
+				9F4BAD95289592C700E9FB4F /* DataModel.xcdatamodeld in Sources */,
 				9F4BAD602894344600E9FB4F /* ContactsViewController.swift in Sources */,
+				9F30D96C2895C3F200151F09 /* CoreDataLoader.swift in Sources */,
+				9F4BAD9B289599F800E9FB4F /* LaunchScreenViewModel.swift in Sources */,
 				9F707F812894234B00DB8381 /* AppDelegate.swift in Sources */,
 				9F707F832894234B00DB8381 /* SceneDelegate.swift in Sources */,
 			);
@@ -925,6 +1029,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		9F4BAD93289592C700E9FB4F /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9F4BAD94289592C700E9FB4F /* Contact.xcdatamodel */,
+			);
+			currentVersion = 9F4BAD94289592C700E9FB4F /* Contact.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		9F707F892894234B00DB8381 /* Test_Pago.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

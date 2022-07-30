@@ -16,6 +16,10 @@ class ContactDetailsViewController: UIViewController {
     
     private var disposeBag = DisposeBag()
     
+    private lazy var backButton: UIBarButtonItem = {
+        makeBackButton()
+    }()
+    
     private lazy var button: UIButton = {
         makeButton()
     }()
@@ -32,10 +36,6 @@ class ContactDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupUI()
-    }
-    
-    private func setupUI() {
         setupBaseLayout()
     }
     
@@ -57,12 +57,22 @@ extension ContactDetailsViewController {
             .disposed(by: self.disposeBag)
         return button
     }
+    
+    private func makeBackButton() -> UIBarButtonItem {
+        let newBackButton = UIBarButtonItem(image: .init(systemName: "arrow.left"), style: .plain, target: self, action: #selector(backAction))
+        return newBackButton
+    }
+    
+    @objc func backAction() {
+        viewModel.backActionPublisher.onNext(())
+    }
 }
 
 //MARK: UI Setup
 extension ContactDetailsViewController {
     private func setupBaseLayout() {
         view.backgroundColor = .white
+        self.navigationItem.leftBarButtonItem = backButton
         
         view.addSubview(button)
         

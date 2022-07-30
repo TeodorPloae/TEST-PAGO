@@ -18,6 +18,22 @@ class AppCoordinator: BaseCoordinator<Void> {
     
     override func start() -> Observable<CoordinateResultType<Void>> {
         
+        let launchScreenCoordinator = LaunchScreenCoordinator(rootNavigationController: rootNavigationController)
+        
+        coordinate(to: launchScreenCoordinator)
+            .subscribe(onNext: { [weak self] coordinationResult in
+                switch coordinationResult {
+                case .dismiss:
+                    self?.rootNavigationController.popViewController(animated: true)
+                    self?.goToContacts()
+                }
+            })
+            .disposed(by: disposeBag)
+        
+        return .never()
+    }
+    
+    private func goToContacts() {
         let contactsCoordinator = ContactsCoordinator(rootNavigationController: rootNavigationController)
         
         coordinate(to: contactsCoordinator)
@@ -28,8 +44,6 @@ class AppCoordinator: BaseCoordinator<Void> {
                 }
             })
             .disposed(by: disposeBag)
-        
-        return .never()
     }
     
     private func goToContactDetails() {

@@ -26,7 +26,7 @@ class ContactsCoordinator: BaseCoordinator<ContactsCoordinatorResult> {
         
         let viewController = ContactsViewController(viewModel: viewModel)
         
-        rootNavigationController.pushViewController(viewController, animated: true)
+        rootNavigationController.setViewControllers([viewController], animated: true)
         
         let goToContactDetailsObserver = viewModel.goToContactDetailsPublisher
             .map({ CoordinateResultType.executeOnly(

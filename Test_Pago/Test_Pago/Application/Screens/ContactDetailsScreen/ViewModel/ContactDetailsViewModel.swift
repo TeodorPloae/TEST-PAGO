@@ -11,6 +11,7 @@ import RxCocoa
 
 class ContactDetailsViewModel {
     let didTapSaveButtonPublisher = PublishSubject<Void>()
+    let backActionPublisher = PublishSubject<Void>()
     
     deinit {
         print("deinit called on \(NSStringFromClass(type(of: self)))")

@@ -50,6 +50,7 @@ class ContactsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        addSubscribers()
     }
     
     override func viewDidLayoutSubviews() {
@@ -60,19 +61,27 @@ class ContactsViewController: UIViewController {
     private func setupUI() {
         setupBaseLayout()
     }
+    
+    private func addSubscribers() {
+        viewModel.reloadTableViewData
+            .subscribe(onNext: { [weak self] in
+                self?.contactsTableView.reloadData()
+            })
+            .disposed(by: disposeBag)
+    }
 }
 
 //MARK: TableView Delegates
 extension ContactsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return viewModel.coreDataContacts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ContactTableViewCell.self)) as! ContactTableViewCell
+        cell.setLayout(for: viewModel.coreDataContacts[indexPath.row])
         return cell
     }
-    
     
 }
 
