@@ -171,8 +171,8 @@
             filePath = "Test_Pago/Application/Screens/ContactsScreen/ViewController/ContactsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
             landmarkName = "setupBaseLayout()"
             landmarkType = "7">
          </BreakpointContent>

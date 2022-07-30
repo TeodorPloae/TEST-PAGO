@@ -34,6 +34,10 @@ class ContactsViewController: UIViewController {
         makeTableHeaderView()
     }()
     
+    private lazy var contactsTableView: UITableView = {
+        makeContactsTableView()
+    }()
+    
     init(viewModel: ContactsViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -56,6 +60,19 @@ class ContactsViewController: UIViewController {
     private func setupUI() {
         setupBaseLayout()
     }
+}
+
+//MARK: TableView Delegates
+extension ContactsViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ContactTableViewCell.self)) as! ContactTableViewCell
+        return cell
+    }
+    
     
 }
 
@@ -68,7 +85,7 @@ extension ContactsViewController {
         
         vStack.addArrangedSubview(headerView)
         vStack.addArrangedSubview(tableHeaderView)
-        vStack.addArrangedSubview(UIView())
+        vStack.addArrangedSubview(contactsTableView)
         
         return vStack
     }
@@ -130,6 +147,19 @@ extension ContactsViewController {
         }
         
         return tableHeaderView
+    }
+    
+    private func makeContactsTableView() -> UITableView {
+        let tableView = UITableView()
+        tableView.backgroundColor = .extra_light_blue
+        
+        tableView.register(ContactTableViewCell.self,
+                           forCellReuseIdentifier: String(describing: ContactTableViewCell.self))
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+
+        return tableView
     }
 }
 
