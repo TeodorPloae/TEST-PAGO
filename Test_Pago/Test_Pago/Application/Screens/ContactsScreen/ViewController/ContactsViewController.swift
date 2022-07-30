@@ -15,9 +15,23 @@ class ContactsViewController: UIViewController {
     private var viewModel: ContactsViewModel
     
     private var disposeBag = DisposeBag()
+
+    private var contentView = UIView()
     
-    private lazy var button: UIButton = {
-        makeButton()
+    private lazy var contentStackView: UIStackView = {
+        makeContentStackView()
+    }()
+    
+    private lazy var headerView: UIView = {
+        makeHeaderView()
+    }()
+    
+    private lazy var addContactButton: UIButton = {
+        makeAddContactButton()
+    }()
+    
+    private lazy var tableHeaderView: UIView = {
+        makeTableHeaderView()
     }()
     
     init(viewModel: ContactsViewModel) {
@@ -32,20 +46,65 @@ class ContactsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
         setupUI()
     }
     
     private func setupUI() {
         setupBaseLayout()
     }
+    
 }
 
 //MARK: Factory Methods
 extension ContactsViewController {
-    private func makeButton() -> UIButton {
+    
+    private func makeContentStackView() -> UIStackView {
+        let vStack = UIStackView()
+        vStack.axis = .vertical
+        
+        vStack.addArrangedSubview(headerView)
+        vStack.addArrangedSubview(tableHeaderView)
+        vStack.addArrangedSubview(UIView())
+        
+        return vStack
+    }
+    
+    private func makeHeaderView() -> UIView {
+        let headerView = UIView()
+        headerView.backgroundColor = .white
+        
+        let titleLabel = UILabel()
+        titleLabel.text = LocalizedString(key: "contacts_screen_title")
+        titleLabel.font = UIFont.systemFont(ofSize: 24, weight: .bold)
+        
+        headerView.addSubview(titleLabel)
+        headerView.addSubview(addContactButton)
+        
+        titleLabel.snp.makeConstraints { make in
+            make.top.bottom.equalToSuperview().inset(16)
+            make.leading.equalToSuperview().inset(24)
+        }
+        
+        addContactButton.snp.makeConstraints { make in
+            make.width.height.equalTo(36)
+            make.centerY.equalTo(titleLabel)
+            make.trailing.equalToSuperview().inset(24)
+        }
+            
+        return headerView
+    }
+    
+    private func makeAddContactButton() -> UIButton {
         let button = UIButton()
-        button.setTitle("goToContactDetails", for: .normal)
-        button.setTitleColor(.blue, for: .normal)
+        button.setImage(UIImage(named: "add_contact_icon"), for: .normal)
+        button.layer.borderColor = UIColor.extra_light_blue.cgColor
+        button.layer.borderWidth = 2
+        button.layer.cornerRadius = 7
+        
         button.rx.tap
             .subscribe(onNext: { [weak self] in
                 self?.viewModel.goToContactDetailsPublisher.onNext(())
@@ -53,17 +112,50 @@ extension ContactsViewController {
             .disposed(by: self.disposeBag)
         return button
     }
+    
+    private func makeTableHeaderView() -> UIView {
+        let tableHeaderView = UIView()
+        tableHeaderView.backgroundColor = .clear
+        
+        let titleLabel = UILabel()
+        titleLabel.text = LocalizedString(key: "contacts_screen_table_header_title").uppercased()
+        titleLabel.font = UIFont.systemFont(ofSize: 13, weight: .semibold)
+        titleLabel.textColor = .light_blue
+        
+        tableHeaderView.addSubview(titleLabel)
+        
+        titleLabel.snp.makeConstraints { make in
+            make.top.bottom.equalToSuperview().inset(11)
+            make.leading.equalToSuperview().inset(24)
+        }
+        
+        return tableHeaderView
+    }
 }
 
 //MARK: UI Setup
 extension ContactsViewController {
     private func setupBaseLayout() {
-        view.backgroundColor = .white
+        view.backgroundColor = .extra_light_blue
+        setupNavBarAppearance()
+        view.addSubview(contentView)
+        let contentViewFrame = view.bounds.inset(by: view.safeAreaInsets)
+        contentView.frame = contentViewFrame
         
-        view.addSubview(button)
+        contentView.addSubview(contentStackView)
         
-        button.snp.makeConstraints { make in
-            make.centerX.centerY.equalToSuperview()
+        contentStackView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
         }
+    }
+    
+    private func setupNavBarAppearance() {
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = .white
+        appearance.shadowColor = .clear
+
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
     }
 }
