@@ -33,7 +33,16 @@ class AppCoordinator: BaseCoordinator<Void> {
     }
     
     private func goToContactDetails() {
-        print("goToContactDetails")
+        let contactDetailsCoordinator = ContactDetailsCoordinator(rootNavigationController: rootNavigationController)
+        
+        coordinate(to: contactDetailsCoordinator)
+            .subscribe(onNext: { [weak self] coordinationResult in
+                switch coordinationResult {
+                case .dismiss:
+                    self?.rootNavigationController.popViewController(animated: true)
+                }
+            })
+            .disposed(by: disposeBag)
     }
 }
 
