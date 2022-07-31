@@ -318,6 +318,11 @@ extension ContactDetailsViewController {
         button.setTitleColor(.white, for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 17, weight: .semibold)
         
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOffset = CGSize(width: 0, height: 3)
+        button.layer.shadowRadius = 5
+        button.layer.shadowOpacity = 0.3
+        
         switch viewModel.flow {
         case .update:
             button.setTitle(LocalizedString(key: "contact_details_main_button_update"), for: .normal)
