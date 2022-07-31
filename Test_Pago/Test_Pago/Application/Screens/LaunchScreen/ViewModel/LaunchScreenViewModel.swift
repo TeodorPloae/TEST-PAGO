@@ -18,7 +18,7 @@ class LaunchScreenViewModel {
     
     private let contactsRepository = ContactsRepository()
     
-    private let coreDataLoader = CoreDataLoader.shared
+    private let coreDataLoader = ContactsDataLoader.shared
     
     init() {
         coreDataLoader.checkCoreDataEmpty { [weak self] result in

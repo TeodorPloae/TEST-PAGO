@@ -9,7 +9,8 @@ import UIKit
 import RxSwift
 
 enum ContactsCoordinatorResult {
-    case goToContactDetails
+    case goToCreateContact
+    case goToUpdateContact(Contact)
 }
 
 class ContactsCoordinator: BaseCoordinator<ContactsCoordinatorResult> {
@@ -28,10 +29,13 @@ class ContactsCoordinator: BaseCoordinator<ContactsCoordinatorResult> {
         
         rootNavigationController.setViewControllers([viewController], animated: true)
         
-        let goToContactDetailsObserver = viewModel.goToContactDetailsPublisher
+        let goToCreateContactObserver = viewModel.goToCreateContactPublisher
             .map({ CoordinateResultType.executeOnly(
-                CoordinationResult.goToContactDetails) })
+                CoordinationResult.goToCreateContact) })
+        let goToUpdateContactObserver = viewModel.goToUpdateContact
+            .map({contact in CoordinateResultType.executeOnly(
+                CoordinationResult.goToUpdateContact(contact)) })
         
-        return Observable.merge(goToContactDetailsObserver)
+        return Observable.merge(goToCreateContactObserver, goToUpdateContactObserver)
     }
 }

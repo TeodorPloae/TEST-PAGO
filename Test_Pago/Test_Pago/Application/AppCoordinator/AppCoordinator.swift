@@ -39,15 +39,17 @@ class AppCoordinator: BaseCoordinator<Void> {
         coordinate(to: contactsCoordinator)
             .subscribe(onNext: { [weak self] coordinationResult in
                 switch coordinationResult {
-                case .goToContactDetails:
-                    self?.goToContactDetails()
+                case .goToCreateContact:
+                    self?.goToContactDetails(flow: .create, contact: nil)
+                case .goToUpdateContact(let contact):
+                    self?.goToContactDetails(flow: .update, contact: contact)
                 }
             })
             .disposed(by: disposeBag)
     }
     
-    private func goToContactDetails() {
-        let contactDetailsCoordinator = ContactDetailsCoordinator(rootNavigationController: rootNavigationController)
+    private func goToContactDetails(flow: Flow, contact: Contact?) {
+        let contactDetailsCoordinator = ContactDetailsCoordinator(rootNavigationController: rootNavigationController, flow: flow, contact: contact)
         
         coordinate(to: contactDetailsCoordinator)
             .subscribe(onNext: { [weak self] coordinationResult in

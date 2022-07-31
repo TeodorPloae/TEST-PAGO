@@ -42,6 +42,11 @@ class ContactTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        photoImageView.subviews.forEach({ $0.removeFromSuperview() })
+    }
+    
     func setLayout(for contact: Contact) {
         let firstName = contact.firstName ?? ""
         let lastName = contact.lastName ?? ""

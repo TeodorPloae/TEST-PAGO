@@ -15,27 +15,31 @@ enum ContactDetailsCoordinatorResult {
 class ContactDetailsCoordinator: BaseCoordinator<ContactDetailsCoordinatorResult> {
     
     let rootNavigationController: UINavigationController
+    let flow: Flow
+    let contact: Contact?
         
-    init(rootNavigationController: UINavigationController) {
+    init(rootNavigationController: UINavigationController,
+         flow: Flow,
+         contact: Contact?
+    ) {
         self.rootNavigationController = rootNavigationController
+        self.flow = flow
+        self.contact = contact
     }
     
     override func start() -> Observable<CoordinateResultType<CoordinationResult>> {
         
-        let viewModel = ContactDetailsViewModel()
+        let viewModel = ContactDetailsViewModel(flow: flow, contact: contact)
         
         let viewController = ContactDetailsViewController(viewModel: viewModel)
         
         rootNavigationController.pushViewController(viewController, animated: true)
         
-        let dismissObserver = viewModel.didTapSaveButtonPublisher
-            .map({ CoordinateResultType.executeAndReleaseTheCoordinator(
-                CoordinationResult.dismiss) })
-        let backActionObserver = viewModel.backActionPublisher
+        let dismissObserver = viewModel.backActionPublisher
             .map({ CoordinateResultType.executeAndReleaseTheCoordinator(
                 CoordinationResult.dismiss) })
         
-        return Observable.merge(dismissObserver, backActionObserver)
+        return Observable.merge(dismissObserver)
             .take(1)
     }
 }

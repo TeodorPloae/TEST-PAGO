@@ -11,10 +11,11 @@ import RxCocoa
 import CoreData
 
 class ContactsViewModel {
-    let goToContactDetailsPublisher = PublishSubject<Void>()
+    let goToCreateContactPublisher = PublishSubject<Void>()
+    let goToUpdateContact = PublishSubject<Contact>()
     let reloadTableViewData = PublishSubject<Void>()
     
-    private let managedContext = AppDelegate.sharedAppDelegate.coreDataStack.managedContext
+    private let contactsDataLoader = ContactsDataLoader.shared
     
     var coreDataContacts = [Contact]() {
         didSet {
@@ -22,17 +23,9 @@ class ContactsViewModel {
         }
     }
     
-    init() {
-        fetchContacts()
-    }
-    
-    private func fetchContacts() {
-        let contactsFetch: NSFetchRequest<Contact> = Contact.fetchRequest()
-        do {
-            let results = try managedContext.fetch(contactsFetch)
-            coreDataContacts = results
-        } catch let error as NSError {
-            print("Fetch error: \(error) description: \(error.userInfo)")
+    func fetchContacts() {
+        contactsDataLoader.fetchContacts { [weak self] contacts in
+            self?.coreDataContacts = contacts
         }
     }
 }

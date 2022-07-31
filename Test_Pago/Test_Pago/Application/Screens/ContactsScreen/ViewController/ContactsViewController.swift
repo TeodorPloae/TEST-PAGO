@@ -38,6 +38,8 @@ class ContactsViewController: UIViewController {
         makeContactsTableView()
     }()
     
+    private var isFirstLoad: Bool = true
+    
     init(viewModel: ContactsViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -53,8 +55,16 @@ class ContactsViewController: UIViewController {
         addSubscribers()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        viewModel.fetchContacts()
+    }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        
+        guard isFirstLoad == true else { return }
+        isFirstLoad = false
+        
         setupBaseLayout()
     }
     
@@ -79,6 +89,9 @@ extension ContactsViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel.goToUpdateContact.onNext(viewModel.coreDataContacts[indexPath.row])
+    }
 }
 
 //MARK: Factory Methods
@@ -129,7 +142,7 @@ extension ContactsViewController {
         
         button.rx.tap
             .subscribe(onNext: { [weak self] in
-                self?.viewModel.goToContactDetailsPublisher.onNext(())
+                self?.viewModel.goToCreateContactPublisher.onNext(())
             })
             .disposed(by: self.disposeBag)
         return button

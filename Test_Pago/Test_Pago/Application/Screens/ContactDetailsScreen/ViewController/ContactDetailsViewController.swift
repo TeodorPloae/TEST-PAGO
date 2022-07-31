@@ -30,16 +30,12 @@ class ContactDetailsViewController: UIViewController {
         makeHeaderView()
     }()
     
-    private lazy var button: UIButton = {
-        makeButton()
-    }()
-    
     private lazy var cardsScrollView: UIScrollView = {
         makeCardsScrollView()
     }()
     
     private lazy var mainButton: UIButton = {
-        makeMainButton(flow: viewModel.flow)
+        makeMainButton()
     }()
     
     private var lastNameTextField = UITextField()
@@ -50,6 +46,8 @@ class ContactDetailsViewController: UIViewController {
     
     private var emailTextField = UITextField()
     
+    private var isFirstLoad: Bool = true
+    
     init(viewModel: ContactDetailsViewModel) {
         self.viewModel = viewModel
     
@@ -59,7 +57,6 @@ class ContactDetailsViewController: UIViewController {
         firstNameTextField.delegate = self
         phoneTextField.delegate = self
         emailTextField.delegate = self
-        
     }
     
     required init?(coder: NSCoder) {
@@ -76,7 +73,11 @@ class ContactDetailsViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
+        guard isFirstLoad == true else { return }
+        isFirstLoad = false
+        
         setupBaseLayout()
+        setupLayoutForContact()
     }
     
     deinit {
@@ -102,6 +103,7 @@ extension ContactDetailsViewController: UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
+    
 }
 
 //MARK: Helper Methods
@@ -187,22 +189,19 @@ extension ContactDetailsViewController {
             make.leading.trailing.equalToSuperview().inset(16)
         }
     }
+    
+    private func setupLayoutForContact() {
+        guard let contact = viewModel.contact else { return }
+        
+        firstNameTextField.text = contact.firstName
+        lastNameTextField.text = contact.lastName
+        phoneTextField.text = contact.phoneNumber
+        emailTextField.text = contact.email
+    }
 }
 
 //MARK: Factory Methods
 extension ContactDetailsViewController {
-    private func makeButton() -> UIButton {
-        let button = UIButton()
-        button.setTitle("saveContact", for: .normal)
-        button.setTitleColor(.blue, for: .normal)
-        button.rx.tap
-            .subscribe(onNext: { [weak self] in
-                self?.viewModel.didTapSaveButtonPublisher.onNext(())
-            })
-            .disposed(by: self.disposeBag)
-        return button
-    }
-    
     private func makeBackButton() -> UIBarButtonItem {
         let newBackButton = UIBarButtonItem(image: .init(systemName: "arrow.left"), style: .plain, target: self, action: #selector(backAction))
         return newBackButton
@@ -312,25 +311,23 @@ extension ContactDetailsViewController {
         return view
     }
     
-    private func makeMainButton(flow: Flow) -> UIButton {
+    private func makeMainButton() -> UIButton {
         let button = UIButton()
         button.backgroundColor = .lime_green
         button.layer.cornerRadius = 12
         button.setTitleColor(.white, for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 17, weight: .semibold)
         
-        switch flow {
-        case .edit:
+        switch viewModel.flow {
+        case .update:
             button.setTitle(LocalizedString(key: "contact_details_main_button_update"), for: .normal)
-            button.addTarget(self,
-                             action: #selector(updateContact),
-                             for: .touchUpInside)
         case .create:
             button.setTitle(LocalizedString(key: "contact_details_main_button_save"), for: .normal)
-            button.addTarget(self,
-                             action: #selector(saveContact),
-                             for: .touchUpInside)
         }
+        
+        button.addTarget(self,
+                         action: #selector(handleMainButtonAction),
+                         for: .touchUpInside)
         
         button.snp.makeConstraints { make in
             make.height.equalTo(48)
@@ -339,17 +336,13 @@ extension ContactDetailsViewController {
         return button
     }
     
-    @objc func updateContact () {
+    @objc func handleMainButtonAction() {
         if textFieldsAreValid() {
-            print("update")
-        } else {
-            showTextFieldsNotValidAlert()
-        }
-    }
-    
-    @objc func saveContact() {
-        if textFieldsAreValid() {
-            print("save")
+            let contactDetails = ContactDetails(firstName: firstNameTextField.text!,
+                                                lastName: lastNameTextField.text!,
+                                                phoneNumber: phoneTextField.text,
+                                                email: emailTextField.text)
+            viewModel.handleMainButtonAction(contactDetails: contactDetails)
         } else {
             showTextFieldsNotValidAlert()
         }

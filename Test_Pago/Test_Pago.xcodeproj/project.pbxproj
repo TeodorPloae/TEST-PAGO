@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		81E02EF7C549A43AEA4EA1A9 /* Pods_Test_Pago.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B08899C9F4893A5574E2D6 /* Pods_Test_Pago.framework */; };
 		90C2007E9D6A81DC6A3E2190 /* Pods_Test_Pago_Test_PagoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDA53F4E053E055E8D1712E5 /* Pods_Test_Pago_Test_PagoUITests.framework */; };
-		9F30D96C2895C3F200151F09 /* CoreDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F30D96B2895C3F200151F09 /* CoreDataLoader.swift */; };
+		9F30D96C2895C3F200151F09 /* ContactsDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F30D96B2895C3F200151F09 /* ContactsDataLoader.swift */; };
 		9F4BAD532894307100E9FB4F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4BAD522894307100E9FB4F /* AppCoordinator.swift */; };
 		9F4BAD55289430B700E9FB4F /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4BAD54289430B700E9FB4F /* BaseCoordinator.swift */; };
 		9F4BAD5E2894342B00E9FB4F /* ContactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4BAD5D2894342B00E9FB4F /* ContactsViewModel.swift */; };
@@ -40,6 +40,7 @@
 		9F707FA72894234C00DB8381 /* Test_PagoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F707FA62894234C00DB8381 /* Test_PagoUITestsLaunchTests.swift */; };
 		9F93543728968864002CC48A /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F93543628968864002CC48A /* Int+Extensions.swift */; };
 		9F93543928968C21002CC48A /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F93543828968C21002CC48A /* UIColor+Extensions.swift */; };
+		9F93543C2896C34E002CC48A /* ContactDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F93543B2896C34E002CC48A /* ContactDetails.swift */; };
 		B99E7FC257A6D94A355DAB57 /* Pods_Test_PagoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA5EC987BF3D4FCAC5E610E /* Pods_Test_PagoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,7 +68,7 @@
 		862A73D22CE74899AF874490 /* Pods-Test_Pago.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_Pago.release.xcconfig"; path = "Target Support Files/Pods-Test_Pago/Pods-Test_Pago.release.xcconfig"; sourceTree = "<group>"; };
 		91327A53B5CF5E68CD505A3D /* Pods-Test_Pago-Test_PagoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_Pago-Test_PagoUITests.release.xcconfig"; path = "Target Support Files/Pods-Test_Pago-Test_PagoUITests/Pods-Test_Pago-Test_PagoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		94AB0BC53BCC51DC64430D62 /* Pods-Test_Pago.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_Pago.debug.xcconfig"; path = "Target Support Files/Pods-Test_Pago/Pods-Test_Pago.debug.xcconfig"; sourceTree = "<group>"; };
-		9F30D96B2895C3F200151F09 /* CoreDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataLoader.swift; sourceTree = "<group>"; };
+		9F30D96B2895C3F200151F09 /* ContactsDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsDataLoader.swift; sourceTree = "<group>"; };
 		9F4BAD522894307100E9FB4F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		9F4BAD54289430B700E9FB4F /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		9F4BAD5D2894342B00E9FB4F /* ContactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewModel.swift; sourceTree = "<group>"; };
@@ -102,6 +103,7 @@
 		9F707FA62894234C00DB8381 /* Test_PagoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_PagoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9F93543628968864002CC48A /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
 		9F93543828968C21002CC48A /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		9F93543B2896C34E002CC48A /* ContactDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetails.swift; sourceTree = "<group>"; };
 		AFA5EC987BF3D4FCAC5E610E /* Pods_Test_PagoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_PagoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B72A2DE758BA36BE34EEDEAD /* Pods-Test_Pago-Test_PagoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_Pago-Test_PagoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Test_Pago-Test_PagoUITests/Pods-Test_Pago-Test_PagoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BDA53F4E053E055E8D1712E5 /* Pods_Test_Pago_Test_PagoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_Pago_Test_PagoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,6 +192,7 @@
 		9F4BAD59289433E600E9FB4F /* ContactDetailsScreen */ = {
 			isa = PBXGroup;
 			children = (
+				9F93543A2896C33C002CC48A /* Models */,
 				9F4BAD7C2895632B00E9FB4F /* Coordinator */,
 				9F4BAD7D2895633600E9FB4F /* ViewController */,
 				9F4BAD7E2895633B00E9FB4F /* ViewModel */,
@@ -312,7 +315,7 @@
 				9F4BADAD2895A2AB00E9FB4F /* Contact+CoreDataProperties.swift */,
 				9F4BAD93289592C700E9FB4F /* DataModel.xcdatamodeld */,
 				9F4BADB02895A52A00E9FB4F /* CoreDataStack.swift */,
-				9F30D96B2895C3F200151F09 /* CoreDataLoader.swift */,
+				9F30D96B2895C3F200151F09 /* ContactsDataLoader.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -432,6 +435,14 @@
 				9F93543828968C21002CC48A /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9F93543A2896C33C002CC48A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9F93543B2896C34E002CC48A /* ContactDetails.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		D755DBB0A6FAA0E2EAEC905B /* Pods */ = {
@@ -708,6 +719,7 @@
 				9F4BAD5E2894342B00E9FB4F /* ContactsViewModel.swift in Sources */,
 				9F4BADA528959C8B00E9FB4F /* ContactsRepository.swift in Sources */,
 				9F4BAD842895638100E9FB4F /* ContactDetailsViewModel.swift in Sources */,
+				9F93543C2896C34E002CC48A /* ContactDetails.swift in Sources */,
 				9F4BAD632894345800E9FB4F /* ContactsCoordinator.swift in Sources */,
 				9F4BAD9F28959A1200E9FB4F /* LaunchScreenCoordinator.swift in Sources */,
 				9F93543728968864002CC48A /* Int+Extensions.swift in Sources */,
@@ -717,7 +729,7 @@
 				9F4BAD802895636800E9FB4F /* ContactDetailsCoordinator.swift in Sources */,
 				9F4BAD95289592C700E9FB4F /* DataModel.xcdatamodeld in Sources */,
 				9F4BAD602894344600E9FB4F /* ContactsViewController.swift in Sources */,
-				9F30D96C2895C3F200151F09 /* CoreDataLoader.swift in Sources */,
+				9F30D96C2895C3F200151F09 /* ContactsDataLoader.swift in Sources */,
 				9F4BAD9B289599F800E9FB4F /* LaunchScreenViewModel.swift in Sources */,
 				9F707F812894234B00DB8381 /* AppDelegate.swift in Sources */,
 				9F707F832894234B00DB8381 /* SceneDelegate.swift in Sources */,
