@@ -55,10 +55,6 @@ class ContactsViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        setupUI()
-    }
-    
-    private func setupUI() {
         setupBaseLayout()
     }
     

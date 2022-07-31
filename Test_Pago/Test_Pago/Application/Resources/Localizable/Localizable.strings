@@ -6,5 +6,23 @@
   
 */
 
+/* Contacts Screen */
 "contacts_screen_title" = "Contacte";
 "contacts_screen_table_header_title" = "Contactele mele";
+
+/* Contact Details Screen */
+"contact_details_screen_title_add_contact" = "Adaugă contact";
+"contact_details_screen_title_edit_contact" = "Editează contact";
+
+"contact_details_screen_last_name_card_title" = "Nume";
+"contact_details_screen_first_name_card_title" = "Prenume";
+"contact_details_screen_phone_card_title" = "Telefon";
+"contact_details_screen_email_card_title" = "Email";
+
+"contact_details_main_button_save" = "Save";
+"contact_details_main_button_update" = "Update";
+
+"warning" = "Atentie";
+"contact_details_text_fields_not_valid" = "Numele si prenumele nu pot fi goale";
+
+

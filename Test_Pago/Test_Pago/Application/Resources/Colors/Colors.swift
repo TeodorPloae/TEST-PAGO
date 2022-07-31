@@ -21,4 +21,16 @@ extension UIColor {
         blue: CGFloat(190.0/255.0),
         alpha: 1
     )
+    static var contact_blue = UIColor(
+        red: CGFloat(193.0/255.0),
+        green: CGFloat(200.0/255.0),
+        blue: CGFloat(215.0/255.0),
+        alpha: 1
+    )
+    static var lime_green = UIColor(
+        red: CGFloat(44.0/255.0),
+        green: CGFloat(200.0/255.0),
+        blue: CGFloat(77.0/255.0),
+        alpha: 1
+    )
 }

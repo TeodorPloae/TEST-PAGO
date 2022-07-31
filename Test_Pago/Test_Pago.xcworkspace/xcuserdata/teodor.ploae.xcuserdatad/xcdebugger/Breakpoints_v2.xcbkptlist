@@ -171,8 +171,8 @@
             filePath = "Test_Pago/Application/Screens/ContactsScreen/ViewController/ContactsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
+            startingLineNumber = "178"
+            endingLineNumber = "178"
             landmarkName = "setupBaseLayout()"
             landmarkType = "7">
          </BreakpointContent>
@@ -255,6 +255,54 @@
             endingLineNumber = "33"
             landmarkName = "start()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9CC583E6-108D-4B7D-9EF1-7805070892D5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Test_Pago/Application/Screens/ContactDetailsScreen/ViewController/ContactDetailsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
+            landmarkName = "onKeyboardAppear(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9CC583E6-108D-4B7D-9EF1-7805070892D5 - f112acc1653b31e7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Test_Pago.ContactDetailsViewController.onKeyboardAppear(__C.NSNotification) -&gt; ()"
+                  moduleName = "Test_Pago"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/teodor.ploae/Desktop/TEST-PAGO/Test_Pago/Test_Pago/Application/Screens/ContactDetailsScreen/ViewController/ContactDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "153"
+                  endingLineNumber = "153"
+                  offsetFromSymbolStart = "166">
+               </Location>
+               <Location
+                  uuid = "9CC583E6-108D-4B7D-9EF1-7805070892D5 - f112acc1653b31e7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Test_Pago.ContactDetailsViewController.onKeyboardAppear(__C.NSNotification) -&gt; ()"
+                  moduleName = "Test_Pago"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/teodor.ploae/Desktop/TEST-PAGO/Test_Pago/Test_Pago/Application/Screens/ContactDetailsScreen/ViewController/ContactDetailsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "153"
+                  endingLineNumber = "153"
+                  offsetFromSymbolStart = "227">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

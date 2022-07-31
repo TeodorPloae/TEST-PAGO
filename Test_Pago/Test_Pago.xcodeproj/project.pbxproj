@@ -38,6 +38,8 @@
 		9F707F9B2894234C00DB8381 /* Test_PagoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F707F9A2894234C00DB8381 /* Test_PagoTests.swift */; };
 		9F707FA52894234C00DB8381 /* Test_PagoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F707FA42894234C00DB8381 /* Test_PagoUITests.swift */; };
 		9F707FA72894234C00DB8381 /* Test_PagoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F707FA62894234C00DB8381 /* Test_PagoUITestsLaunchTests.swift */; };
+		9F93543728968864002CC48A /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F93543628968864002CC48A /* Int+Extensions.swift */; };
+		9F93543928968C21002CC48A /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F93543828968C21002CC48A /* UIColor+Extensions.swift */; };
 		B99E7FC257A6D94A355DAB57 /* Pods_Test_PagoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFA5EC987BF3D4FCAC5E610E /* Pods_Test_PagoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +100,8 @@
 		9F707FA02894234C00DB8381 /* Test_PagoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test_PagoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F707FA42894234C00DB8381 /* Test_PagoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_PagoUITests.swift; sourceTree = "<group>"; };
 		9F707FA62894234C00DB8381 /* Test_PagoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test_PagoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9F93543628968864002CC48A /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		9F93543828968C21002CC48A /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		AFA5EC987BF3D4FCAC5E610E /* Pods_Test_PagoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_PagoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B72A2DE758BA36BE34EEDEAD /* Pods-Test_Pago-Test_PagoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_Pago-Test_PagoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Test_Pago-Test_PagoUITests/Pods-Test_Pago-Test_PagoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BDA53F4E053E055E8D1712E5 /* Pods_Test_Pago_Test_PagoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test_Pago_Test_PagoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -269,6 +273,7 @@
 		9F4BAD8528956AB400E9FB4F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9F93543528968850002CC48A /* Extensions */,
 				9F4BAD8C28957C5200E9FB4F /* Colors */,
 				9F4BAD8628956ACA00E9FB4F /* Localizable */,
 				9F4BAD672894444300E9FB4F /* Assets */,
@@ -418,6 +423,15 @@
 				9F707FA62894234C00DB8381 /* Test_PagoUITestsLaunchTests.swift */,
 			);
 			path = Test_PagoUITests;
+			sourceTree = "<group>";
+		};
+		9F93543528968850002CC48A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9F93543628968864002CC48A /* Int+Extensions.swift */,
+				9F93543828968C21002CC48A /* UIColor+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		D755DBB0A6FAA0E2EAEC905B /* Pods */ = {
@@ -684,6 +698,7 @@
 				9F4BAD822895637800E9FB4F /* ContactDetailsViewController.swift in Sources */,
 				9F4BADB12895A52A00E9FB4F /* CoreDataStack.swift in Sources */,
 				9F4BADAE2895A2AB00E9FB4F /* Contact+CoreDataClass.swift in Sources */,
+				9F93543928968C21002CC48A /* UIColor+Extensions.swift in Sources */,
 				9F707F8B2894234B00DB8381 /* Test_Pago.xcdatamodeld in Sources */,
 				9F4BAD8B28956BB300E9FB4F /* LocalizedString.swift in Sources */,
 				9F4BAD55289430B700E9FB4F /* BaseCoordinator.swift in Sources */,
@@ -695,6 +710,7 @@
 				9F4BAD842895638100E9FB4F /* ContactDetailsViewModel.swift in Sources */,
 				9F4BAD632894345800E9FB4F /* ContactsCoordinator.swift in Sources */,
 				9F4BAD9F28959A1200E9FB4F /* LaunchScreenCoordinator.swift in Sources */,
+				9F93543728968864002CC48A /* Int+Extensions.swift in Sources */,
 				9F4BAD532894307100E9FB4F /* AppCoordinator.swift in Sources */,
 				9F4BADA728959D3800E9FB4F /* ContactNetworkModel.swift in Sources */,
 				9F4BAD8E28957C6D00E9FB4F /* Colors.swift in Sources */,
